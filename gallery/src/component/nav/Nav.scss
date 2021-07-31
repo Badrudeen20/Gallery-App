@@ -1,0 +1,97 @@
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+nav{
+    display: flex;
+    background-color: red($color: #000000);
+    justify-content: space-between;
+    padding: 0 1.4rem;
+    background-color: #D5D8DC;
+    min-height: 8vh;
+    line-height: 50px;
+    width: 100%;
+    z-index: 1000;
+    @media screen and(max-width:600px){ 
+        position: fixed;
+        top:0;
+        
+    }
+    .burger{
+        @media screen and(min-width:600px){
+            display: none;
+        }
+    }
+    .auth{
+        span{
+            padding: .4rem;
+            font-size: .8rem;
+            border: .7px solid #333;
+            border-radius: 3px;
+            cursor: pointer;
+            font-weight: 700;
+        }
+    }
+    ul{
+        position: absolute;
+        display:flex;
+        padding: 0 2rem;
+        margin-left: 1rem;
+        z-index: 1000;
+        li{
+           padding: 0 1.5rem;
+            &.active{
+                display: none;
+            }
+           i{
+            visibility: hidden;
+           }
+        }
+      
+        @media screen and(max-width:600px){ 
+            position: fixed;
+            margin-left: 0;
+            min-width: 100vw;
+            min-height: 100vh;
+            top:8vh;
+            left:0;
+            background-color: #2C3E50;
+            flex-direction: column;
+            padding: 0 .3rem;
+             display: none;
+            &.active{
+                display: block;
+            }
+            li{
+                padding: 0;
+                span{
+                    color:#fff;
+                    font-weight: 600;
+                    cursor: pointer;
+                }
+            }
+        }
+
+     /*   @media screen and(max-width:600px){ 
+            position: fixed;
+            margin-left: 0;
+            width:100%;
+            bottom: 0;
+            left:0;
+            background-color: royalblue;
+            li {
+               padding: 0;
+               border:1px solid green;
+                &.active{
+                    display: flex;
+                }
+                span{
+                    display: none;
+                }
+                 i{
+                    visibility: visible;
+                     font-size: 1.2rem;
+                     color:#fff;
+                     cursor: pointer;
+                 }
+            }
+        } */
+    }
+}

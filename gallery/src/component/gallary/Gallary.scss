@@ -1,0 +1,27 @@
+.gallary{
+    max-width: 800px;
+    margin: auto;
+   
+    ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap:1rem;
+        li{
+            overflow: hidden;
+            height: 0;
+            padding: 50% 0;
+            position: relative;
+            cursor: pointer;
+            opacity: 0.8;
+            img{
+             min-width: 100%;
+             min-height: 100%;
+             max-width: 150%;
+             position: absolute;
+             top:0;
+             left:0;
+            }
+          
+        }
+    }
+}
