@@ -20,33 +20,3 @@ export default function App() {
   )
 }
 
-/*
-
-export default class App extends Component {
-  constructor(){
-        super()
-    this.state = {
-          file:null
-    }
-}
-
-handleFile = (file)=>{
-    this.setState({file:file})
-}
-
-  render() {
-    const {file}  = this.state
-   
-    return (
-      <>
-        <Nav />
-        <Header handleFile={this.handleFile} />
-        {file && <Progress file={this.state.file} handleFile={this.handleFile}sss/>}
-        <Gallary />
-        <Modal />
-      </>
-    )
-  }
-}
-
-*/
